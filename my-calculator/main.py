@@ -1,0 +1,30 @@
+print("Jednoduchá kalkulačka")
+
+a = float(input("Zadej první číslo: "))
+b = float(input("Zadej druhé číslo: "))
+
+print("Vyber operaci:")
+print("1 - sčítání")
+print("2 - odčítání")
+print("3 - násobení")
+print("4 - dělení")
+
+volba = input("Tvoje volba: ")
+
+if volba == "1":
+    print("Výsledek je:", a + b)
+
+elif volba == "2":
+    print("Výsledek je:", a - b)
+
+elif volba == "3":
+    print("Výsledek je:", a * b)
+
+elif volba == "4":
+    if b != 0:
+        print("Výsledek je:", a / b)
+    else:
+        print("Nelze dělit nulou!")
+
+else:
+    print("Neplatná volba")
